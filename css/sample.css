@@ -385,7 +385,7 @@ h1 {
       display: block; }
       #sidebar .pc_sidemenu li a:hover {
         color: #42b9d0; }
-    #sidebar .pc_sidemenu li .fb-page {
+    #sidebar .pc_sidemenu li #fb-page {
       display: inline-block;
       position: relative; }
 
