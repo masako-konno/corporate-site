@@ -217,25 +217,39 @@ header{
 }
 
 #service_area{
-
-  padding-top:20px;
+  
+  padding-top: 20px;
 
   @media (min-width: 550px) {
     padding-top: 30px;
   }
   // min-width: 550px
 
-
+  .container{
+    
+    @media (min-width: 550px){
+    
+  width: 80%;
+  }  
+    @media (min-width: 400px){
+      padding: 0;
+      position: relative;
+      max-width: 960px;
+      margin: 0 auto;
+      box-sizing:border-box;
+    }
+  
   .columns{
 
     color: #626262;
 
     .service_title{
+      
       @include fontsize(18);
       font-weight: bold;
       margin-top: 8px;
     }
-
+    
     p{
 
       @include fontsize(15);
@@ -255,10 +269,9 @@ header{
 
     }
     // min-width: 550px
-
+  }
   }
   // .columns
-
 }
 // #service_area
 
@@ -353,6 +366,7 @@ footer{
       margin: 0;
       padding: 0;
     }
+    
 
     .sp{
 
@@ -483,9 +497,9 @@ h1{
 
   .container h2{
   text-align: center;
-  padding:80px 0;
+  padding: 80px 0;
   color: #FFFFFF;
-  fontsize:3.2rem;
+  font-size:3.2rem;
   font-weight: bold;
   margin: 0;
   letter-spacing: 0.2rem
@@ -505,7 +519,7 @@ h1{
       
       text-align: left;
       height: 200px;
-      padding: 0;
+      padding: 80px 0;
       
       img{
         margin-top: 180px;
@@ -559,31 +573,59 @@ h1{
         
         h2{
          color: $blue1;
-         font-size: 2rem;
+         font-size: 2.0rem;
          font-weight: bold;
          display: block;
-         margin-bottom: 2rem ;
          border-bottom: 3px solid;
          border-bottom-color: $blue1;
          line-height: 1.25;
          padding-bottom: 20px;
+         margin: 0;
+         letter-spacing: -.1rem;
         }
      
+     .news_li{
+        margin: 25px;
+        
+      ul{
+        margin-bottom: 2.5rem;
+        padding-left: 0;
+        margin-top: 0;
+      }
      li{
        list-style: none;
        @include fontsize(15);
-       
+     }
        span{
          color: $blue1;
          font-weight: bold;
-         display: block;
          margin-bottom: 3px;
-         
+         display: inline-block;
+         padding-right: 10px;
+       } 
        
         }
-        }
+//  news.html company.html
+      
+      .u-full-width{
+      width: 100%;
+      margin: 0;
+      padding: 0; 
+      
+      th {
+      padding: 20px 0;
+      color: #626262;
+      }
+      td {
+      padding-right: 20px;
+      padding: 20px 20px;
        }
-     }
+      }
+    }
+        
+    }
+// company.html
+    
 // #main
 
     #sidebar {
@@ -602,6 +644,7 @@ h1{
     }
     }
     // min-width:550px
+        
         
         .pc_sidemenu{
             
@@ -645,8 +688,13 @@ h1{
                       color: $blue1;
                   }
                  }
+                 .fb-page{
+                   display:inline-block;
+                   position:relative;
+                 }
     
     }
 }
-}
+   
 
+}
