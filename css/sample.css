@@ -289,7 +289,7 @@ h1 {
     padding-top: 35px 70px 0 0; } }
 @media (max-width: 550px) {
   #contents {
-    padding: 20px; } }
+    padding-top: 20px; } }
 #contents .container {
   position: relative;
   max-width: 960px;
@@ -322,15 +322,14 @@ h1 {
     border-bottom-color: #42b9d0;
     line-height: 1.25;
     padding-bottom: 20px;
-    margin: 0;
+    margin-bottom: 20px;
     letter-spacing: -.1rem; }
     @media (max-width: 550px) {
       #contents .container #main h2 {
         padding-bottom: 15px;
-        font-size: 1.5rem;
-        padding-bottom: 15px; } }
+        font-size: 1.5rem; } }
   #contents .container #main .news_li {
-    margin: 25px; }
+    margin-bottom: 25px; }
     #contents .container #main .news_li ul {
       margin-bottom: 2.5rem;
       padding-left: 0;
